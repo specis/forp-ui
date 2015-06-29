@@ -30,6 +30,7 @@
 #forp div.mainpanel {
     border-top: 1px solid #BBB;
     background: #fff;
+    clear: left;
 }
 
 /* nav */
