@@ -1,6 +1,6 @@
 (function(forp, $) {
 
-    forp.plugins.metrics = {
+    forp.plugins.export = {
         'nav': {
             'label': 'export',
             'display': true,

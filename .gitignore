@@ -1,1 +1,4 @@
 /.idea/
+/src/tools/cssmin/
+/src/tools/jsmin/
+/src/js/submodules/jmicro/

@@ -236,7 +236,8 @@
 }
 #forp li{
     line-height: 1.8 !important;
-    margin: 2px
+    margin: 2px;
+    color: black;
 }
 #forp li div.numeric{
     min-width: 60px;
@@ -249,6 +250,7 @@
     text-align:center;
     width: 20px;
     cursor: pointer;
+    color: black;
 }
 #forp li.expanded div.expander:before{
     content: "-";

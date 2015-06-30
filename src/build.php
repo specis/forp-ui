@@ -3,7 +3,7 @@
  * forp-ui builder
  */
 require 'tools/jsmin/jsmin.php';
-require 'tools/cssmin/src/CssMin.php';
+require 'tools/cssmin/CssMin.php';
 
 // Default opts
 $skin = 'consolas'; //dark theme
@@ -86,6 +86,7 @@ $files = array(
         'js/plugins/groups',
         'js/plugins/files',
         'js/plugins/searchengine',
+        'js/plugsin/export',
     ),
     'css' => array(
         'css/default',
@@ -93,8 +94,9 @@ $files = array(
     )
 );
 
-
-$path = dirname(__FILE__) . '/built/forp.min.js';
+// Quick check to see if the build directory exists, for future skins
+if (!is_dir(dirname(__FILE__) . '/built/' . $skin)) { mkdir(dirname(__FILE__) . '/built/' . $skin); }
+$path = dirname(__FILE__) . '/built/' . $skin . '/forp.min.js';
 $target = fopen($path, 'w+');
 try {
     $js = $css = '';
