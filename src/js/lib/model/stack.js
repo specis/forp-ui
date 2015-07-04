@@ -376,6 +376,11 @@
             return this.aggregate().includes;
         };
 
+        this.getRawStack = function()
+        {
+            return JSON.stringify(stack);
+        };
+
         /**
          * Groups
          * @return array Files

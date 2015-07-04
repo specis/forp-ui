@@ -1,8 +1,8 @@
 (function(forp, $) {
 
-    forp.plugins.export = {
+    forp.plugins.import = {
         'nav': {
-            'label': 'export',
+            'label': 'import',
             'display': true,
             'enabled': function() {
                 //return (forp.getController().getStack().inspect == null);
@@ -11,8 +11,7 @@
             'open': function(e) {
                 // Some way to export current data easily
                 var controller = forp.getController();
-                var $table = $.table(["Export Data"]);
-                $table.line([controller.getStack().getRawStack()]);
+                var $table = $.table(["Import Data"]);
                 controller.getConsole().show($table);
             },
             'close': function() {

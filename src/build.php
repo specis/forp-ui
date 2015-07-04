@@ -85,8 +85,9 @@ $files = array(
         'js/plugins/calls',
         'js/plugins/groups',
         'js/plugins/files',
+        'js/plugins/export',
+        'js/plugins/import',
         'js/plugins/searchengine',
-        'js/plugsin/export',
     ),
     'css' => array(
         'css/default',
